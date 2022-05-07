@@ -12,6 +12,6 @@
   "author": "makotot",
   "license": "ISC",
   "devDependencies": {
-    "zenn-cli": "0.1.109"
+    "zenn-cli": "0.1.110"
   }
 }
