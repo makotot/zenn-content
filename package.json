@@ -8,12 +8,14 @@
     "preview": "zenn preview",
     "new:article": "zenn new:article",
     "textlint": "textlint ./articles/*.md",
-    "lint": "npm run textlint"
+    "lint": "npm run textlint",
+    "format": "dprint fmt"
   },
   "keywords": [],
   "author": "makotot",
   "license": "ISC",
   "devDependencies": {
+    "dprint": "0.27.1",
     "textlint": "12.1.1",
     "textlint-rule-preset-japanese": "7.0.0",
     "zenn-cli": "0.1.110"

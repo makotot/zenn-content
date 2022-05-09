@@ -6,6 +6,12 @@ on:
       - main
 
 jobs:
+  style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dprint/check@v2.0
+
   test:
     runs-on: ubuntu-latest
     steps:
