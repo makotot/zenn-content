@@ -1,5 +1,25 @@
 {
   "dprint.path": "./node_modules/dprint/dprint",
   "editor.defaultFormatter": "dprint.dprint",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#a59ff8",
+    "activityBar.activeBorder": "#d01c0f",
+    "activityBar.background": "#a59ff8",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#d01c0f",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#a59ff8",
+    "statusBar.background": "#7870f4",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#4b41f0",
+    "statusBarItem.remoteBackground": "#7870f4",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#7870f4",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#7870f499",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#7870f4"
 }
