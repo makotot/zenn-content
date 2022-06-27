@@ -20,13 +20,16 @@ published: true
 調査時点でRustによって実装されているであろうことがGithub上で確認できたものをリストアップしているだけで、安定版であるかどうかは考慮しない。
 
 ### Node.js バージョンマネージャ
+
 - [volta-cli/volta: Volta: JS Toolchains as Code. ⚡](https://github.com/volta-cli/volta)
 - [Schniz/fnm: 🚀 Fast and simple Node.js version manager, built in Rust](https://github.com/Schniz/fnm)
 
 ### トランスパイラ
+
 - [swc-project/swc: Rust-based platform for the Web](https://github.com/swc-project/swc)
 
 ### WebAssembly
+
 - [thedodd/trunk: Build, bundle & ship your Rust WASM application to the web.](https://github.com/thedodd/trunk)
 - [sn99/wasm-template-rust: A wasm 🕸 template for Rust 🦀 to publish to gh-pages without npm-deploy](https://github.com/sn99/wasm-template-rust)
 - [rhysd/wain: WebAssembly implementation from scratch in Safe Rust with zero dependencies](https://github.com/rhysd/wain)
@@ -36,6 +39,7 @@ published: true
 - [wasmerio/wasmer: 🚀 The leading WebAssembly Runtime supporting WASI and Emscripten](https://github.com/wasmerio/wasmer)
 
 #### フレームワーク
+
 - [yewstack/yew: Rust / Wasm framework for building client web apps](https://github.com/yewstack/yew)
   - [jetli/awesome-yew: 😎 A curated list of awesome things related to Yew / WebAssembly.](https://github.com/jetli/awesome-yew)
 - [chinedufn/percy: Build frontend browser apps with Rust + WebAssembly. Supports server side rendering.](https://github.com/chinedufn/percy)
@@ -48,6 +52,7 @@ published: true
   - [DioxusLabs/awesome-dioxus: An awesome list of Dioxus-related content and resources](https://github.com/DioxusLabs/awesome-dioxus)
 
 ### CSS
+
 - [postcss-rs/postcss-rs: 🚀 Fast and 100% API compatible postcss replacer, built in Rust](https://github.com/postcss-rs/postcss-rs)
 - [lukidoescode/css-in-rust: Style web components written in Rust with ease.](https://github.com/lukidoescode/css-in-rust)
 - [parcel-bundler/parcel-css: A CSS parser, transformer, and minifier written in Rust.](https://github.com/parcel-bundler/parcel-css)
@@ -57,21 +62,26 @@ published: true
 - [kalcutter/rust-css-color: Parse color strings from CSS Color Module Level 4](https://github.com/kalcutter/rust-css-color)
 
 #### SCSS
+
 - [connorskees/grass: A near-feature-complete Sass compiler written purely in Rust](https://github.com/connorskees/grass)
 - [kaj/rsass: Sass reimplemented in rust with nom.](https://github.com/kaj/rsass)
 
 ### デスクトップアプリ
+
 - [tauri-apps/tauri: Build smaller, faster, and more secure desktop applications with a web frontend.](https://github.com/tauri-apps/tauri)
 
 ### 画像
+
 - [imager-io/imager: Automated image compression for efficiently distributing images on the web.](https://github.com/imager-io/imager)
 - [shssoichiro/oxipng: Multithreaded PNG optimizer written in Rust](https://github.com/shssoichiro/oxipng)
 - [silvia-odwyer/photon: ⚡ Rust/WebAssembly image processing library](https://github.com/silvia-odwyer/photon)
 
 ### SVG
+
 - [RazrFalcon/resvg: An SVG rendering library.](https://github.com/RazrFalcon/resvg)
 
 ### データ可視化
+
 - [plotters-rs/plotters: A rust drawing library for high quality data plotting for both WASM and native, statically and realtimely 🦀 📈🚀](https://github.com/plotters-rs/plotters)
   - [plotters-rs/plotters-canvas: Plotters HTML5 Canvas-WASM Backend](https://github.com/plotters-rs/plotters-canvas)
 - [igiagkiozis/plotly: Plotly for Rust](https://github.com/igiagkiozis/plotly)
@@ -79,30 +89,38 @@ published: true
 - [askanium/rustplotlib: A pure Rust visualization library inspired by D3.js](https://github.com/askanium/rustplotlib)
 
 ### テスト
+
 - [DrSensor/rs-jest: Jest preprocessor/transformer for Rust](https://github.com/DrSensor/rs-jest)
 
 ### ブラウザ
+
 - [servo/servo: The Servo Browser Engine](https://github.com/servo/servo)
   - [servo/rust-cssparser: Rust implementation of CSS Syntax Level 3](https://github.com/servo/rust-cssparser)
 - [lmt-swallow/puppy-browser: An example implementation of a tiny Web browser for educational purposes.](https://github.com/lmt-swallow/puppy-browser)
 - [maekawatoshiki/naglfar: A toy web browser implemented in Rust from scratch](https://github.com/maekawatoshiki/naglfar)
 
 #### HTTP
+
 - [hyperium/hyper: An HTTP library for Rust](https://github.com/hyperium/hyper)
 
 ### JSON
+
 - [importcjj/rust-ajson: Rust port of gjson，get JSON value by dotpath syntax](https://github.com/importcjj/rust-ajson)
 
 ### WebSocket
+
 - [housleyjk/ws-rs: Lightweight, event-driven WebSockets for Rust.](https://github.com/housleyjk/ws-rs)
 
 ### Lint
+
 - [rslint/rslint: A (WIP) Extremely fast JavaScript and TypeScript linter and Rust crate](https://github.com/rslint/rslint)
 
 ### コードフォーマット
+
 - [dprint/dprint: Pluggable and configurable code formatting platform written in Rust.](https://github.com/dprint/dprint)
 
 ### Deno
+
 - [denoland/deno: A modern runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
   - [denoland/deno_ast: Source text parsing, lexing, and AST related functionality for Deno](https://github.com/denoland/deno_ast)
   - [denoland/eszip: A compact file format to losslessly serialize an ECMAScript module graph into a single file](https://github.com/denoland/eszip)
@@ -114,6 +132,7 @@ published: true
   - [denoland/rusty_v8: Rust bindings for the V8 JavaScript engine](https://github.com/denoland/rusty_v8)
 
 ### その他
+
 - [browserslist/browserslist-rs: Rust-ported Browserslist.](https://github.com/browserslist/browserslist-rs)
 - [koute/cargo-web: A Cargo subcommand for the client-side Web](https://github.com/koute/cargo-web)
 - [koute/stdweb: A standard library for the client-side Web](https://github.com/koute/stdweb)
@@ -146,16 +165,17 @@ published: true
 - [graphql-rust/graphql-client: Typed, correct GraphQL requests and responses in Rust](https://github.com/graphql-rust/graphql-client)
 - [seanmonstar/reqwest: An easy and powerful Rust HTTP Client](https://github.com/seanmonstar/reqwest)
 
-
 ## 学習する上でのリソース
 
 学ぶ上で参考になりそうなチュートリアルや記事などをリストに入れて主観でカテゴリ分けしたもの。
 WebAssemblyに関してのみのリソースも含んでいる。
 
 ### トランスパイラ
+
 - [現実の Babel プラグインを SWC プラグインに移行する](https://zenn.dev/sosukesuzuki/articles/e6ac87acdd7122)
 
 ### WebAssembly
+
 - [Rust から WebAssembly にコンパイルする - WebAssembly | MDN](https://developer.mozilla.org/ja/docs/WebAssembly/Rust_to_wasm)
 - [WASMとRustはVue.js/React.jsを打倒するのか？ - JSへの侵略の歴史](https://zenn.dev/koduki/articles/c07db4179bb7b86086a1)
 - [wip.md](https://gist.github.com/mizchi/86e53810e08eee2176d98b20870a9b86)
@@ -165,9 +185,11 @@ WebAssemblyに関してのみのリソースも含んでいる。
 - [What makes WebAssembly fast? - Mozilla Hacks - the Web developer blog](https://hacks.mozilla.org/2017/02/what-makes-webassembly-fast/)
 
 #### フレームワーク
+
 - [flosse/rust-web-framework-comparison: A comparison of some web frameworks and libs written in Rust](https://github.com/flosse/rust-web-framework-comparison)
 
 ##### Yew
+
 - [Web フロントエンドエンジニアのための Rust 製 Web フロントフレームワーク Yew 入門](https://zenn.dev/azukiazusa/articles/rust-base-web-front-fremework-yew)
 - [Single Page Applications using Rust](https://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/)
 - [Build a Rust + WebAssembly frontend web app with Yew - LogRocket Blog](https://blog.logrocket.com/rust-webassembly-frontend-web-app-yew/)
@@ -175,21 +197,26 @@ WebAssemblyに関してのみのリソースも含んでいる。
 - [Rust + Yew = WebAssembly でかんばんライクなタスク管理アプリを作ってみました。 | 株式会社ヌーラボ(Nulab inc.)](https://nulab.com/ja/blog/nulab/rust-yew-webassembly-kanban-app/)
 
 ##### Seed
+
 - [SeedでRust-onlyなポートフォリオサイトを作ってみた](https://zenn.dev/etoal83/articles/6eb6031865f3de)
 
 ### Node.js
+
 - [vinodotdev/node-to-rust](https://github.com/vinodotdev/node-to-rust)
 
 ### ブラウザ
+
 - [Let's build a browser engine! Part 1: Getting started](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
   - [「Let's build a browser engine!」を読んでRustで簡易レンダリングエンジンを作った - dackdive's blog](https://dackdive.hateblo.jp/entry/2021/02/23/113522)
 
 ### デスクトップアプリ
+
 - [Rust によるデスクトップアプリケーションフレームワーク Tauri | 豆蔵デベロッパーサイト](https://developer.mamezou-tech.com/blogs/2022/03/06/tauri/)
 - [Will Tauri Be an Electron Killer? | by Zachary Lee | Better Programming](https://betterprogramming.pub/will-tauri-be-an-electron-killer-38fd6478004)
 - [DeepLのデスクトップアプリをRustとPreactとTailwind CSSでつくった | うなすけとあれこれ](https://blog.unasuke.com/2021/create-deepl-client-app/)
 
 ### その他
+
 - [Rust Is The Future of JavaScript Infrastructure – Lee Robinson](https://leerob.io/blog/rust)
 - [yoshuawuyts/rust-for-js-peeps: Know JS, want to try Rust, but not sure where to start? This is for you!](https://github.com/yoshuawuyts/rust-for-js-peeps)
 - [anshulrgoyal/rust-web-developer-roadmap: Roadmap to becoming a Rust Web Developer in 2021](https://github.com/anshulrgoyal/rust-web-developer-roadmap)
