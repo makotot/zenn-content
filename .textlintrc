@@ -1,9 +1,0 @@
-{
-  "filters": {},
-  "rules": {
-    "preset-japanese": true,
-    "japanese/sentence-length": {
-      "max": 160
-    }
-  }
-}
