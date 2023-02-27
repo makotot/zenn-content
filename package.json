@@ -18,6 +18,6 @@
     "dprint": "0.34.5",
     "textlint": "13.3.1",
     "textlint-rule-preset-japanese": "7.0.0",
-    "zenn-cli": "0.1.140"
+    "zenn-cli": "0.1.141"
   }
 }
