@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "johnpapa.vscode-peacock",
+    "asvetliakov.vscode-neovim",
+    "oderwat.indent-rainbow",
+    "dprint.dprint"
+  ]
+}
