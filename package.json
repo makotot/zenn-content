@@ -18,7 +18,7 @@
     "dprint": "0.47.5",
     "textlint": "14.3.0",
     "textlint-rule-preset-japanese": "10.0.3",
-    "zenn-cli": "0.1.157"
+    "zenn-cli": "0.1.158"
   },
   "volta": {
     "node": "20.18.0"
