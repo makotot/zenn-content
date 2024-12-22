@@ -15,7 +15,7 @@
   "author": "makotot",
   "license": "ISC",
   "devDependencies": {
-    "dprint": "0.47.6",
+    "dprint": "0.48.0",
     "textlint": "14.4.0",
     "textlint-rule-preset-japanese": "10.0.3",
     "zenn-cli": "0.1.158"
