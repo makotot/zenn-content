@@ -17,7 +17,7 @@
   "devDependencies": {
     "dprint": "0.48.0",
     "textlint": "14.4.2",
-    "textlint-rule-preset-japanese": "10.0.3",
+    "textlint-rule-preset-japanese": "10.0.4",
     "zenn-cli": "0.1.158"
   },
   "volta": {
