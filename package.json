@@ -7,6 +7,7 @@
   "scripts": {
     "preview": "zenn preview",
     "new:article": "zenn new:article",
+    "new:book": "zenn new:book",
     "textlint": "textlint ./articles/*.md",
     "lint": "npm run textlint",
     "format": "dprint fmt"
