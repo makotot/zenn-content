@@ -15,6 +15,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      - run: npm ci
-      - run: npm run lint
+      - uses: actions/checkout@v6
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.23.0
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm run textlint
