@@ -34,7 +34,7 @@ React Ariaの`Table`コンポーネントは、ベースにARIA gridパターン
 >
 > https://react-spectrum.adobe.com/react-aria/Table.html#features
 
-ARIA gridパターンとは、[WAI-ARIA Authoring Practices Guide（APG）](https://www.w3.org/WAI/ARIA/apg/) [^2]に記載されている、アクセシブルな表形式のUIを構築するための設計パターンです。
+ARIA gridパターンとは、[WAI-ARIA Authoring Practices Guide（APG）](https://www.w3.org/WAI/ARIA/apg/)[^2]に記載されている、アクセシブルな表形式のUIを構築するための設計パターンです。
 React Ariaの`Table`コンポーネントは、このARIA gridパターンをベースにしているため、一般的な表形式のUIとは異なる振る舞いをします。
 
 [^2]: ARIA Authoring Practices Guideは、WAI-ARIAを活用してアクセシブルなUIを実装するためのガイドとなるW3Cのドキュメントです。 https://www.w3.org/WAI/ARIA/apg/
@@ -45,10 +45,10 @@ React Ariaの`Table`コンポーネントは、このARIA gridパターンをベ
 
 ひとことに「表」といっても、WAI-ARIAの`role`[^3]としては、`table`と`grid`という2つの概念があります。
 
-| role | 概要 |
-| ---- | ---- |
-| `table` | HTMLの`<table>`要素に相当する。静的な表形式データのUIに使用する。 |
-| `grid` | インタラクティブな表形式UIに対応する役割。セルの選択や編集、ソートなどの操作が可能なUIに使用する。 |
+| role    | 概要                                                  |
+| ------- | --------------------------------------------------- |
+| `table` | HTMLの`<table>`要素に相当する。静的な表形式データのUIに使用する。            |
+| `grid`  | インタラクティブな表形式UIに対応する役割。セルの選択や編集、ソートなどの操作が可能なUIに使用する。 |
 
 [^3]: roleとは、ユーザーインターフェースの要素種別を示す属性です。 https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA
 
@@ -56,13 +56,13 @@ React Ariaの`Table`コンポーネントは、このARIA gridパターンをベ
 
 そして、[ARIA grid pattern](https://www.w3.org/WAI/ARIA/apg/patterns/grid/)では、`grid`のパターンを2つのカテゴリーに分けています。
 
-> Uses of the grid pattern broadly fall into two categories: presenting tabular information (data grids) and grouping other widgets (layout grids). 
-> 
+> Uses of the grid pattern broadly fall into two categories: presenting tabular information (data grids) and grouping other widgets (layout grids).
+>
 > https://www.w3.org/WAI/ARIA/apg/patterns/grid/
 
-| カテゴリー | 概要 |
-| ---------- | ---- |
-| Data Grids | 表形式の情報を提示するために使用されるグリッド。セルの選択や編集、ソートなどの操作が可能なUIに使用する。 |
+| カテゴリー        | 概要                                                               |
+| ------------ | ---------------------------------------------------------------- |
+| Data Grids   | 表形式の情報を提示するために使用されるグリッド。セルの選択や編集、ソートなどの操作が可能なUIに使用する。            |
 | Layout Grids | 他のウィジェットをグループ化するために使用されるグリッド。レイアウト目的で使用され、セルの選択や編集などの操作は通常含まれない。 |
 
 React Ariaの`Table`は、データ表示に対するコンポーネントなので、ARIA gridパターンの中でも「Data Grids」に該当すると言えるでしょう。
@@ -95,12 +95,12 @@ React Ariaの`Table`は、データ表示に対するコンポーネントなの
 
 ![セル間移動は矢印キーで可能](https://storage.googleapis.com/zenn-user-upload/201862681889-20251203.png =320x)
 
-tab キーは “グリッドというウィジェット全体の出入り” に使い、  セル間の移動は矢印キーに統一する、というのが Grid パターンの基本的な思想だと理解すると良いかもしれません。
+tab キーは “グリッドというウィジェット全体の出入り” に使い、 セル間の移動は矢印キーに統一する、というのが Grid パターンの基本的な思想だと理解すると良いかもしれません。
 
 一方、セル間移動の挙動は以下のように「右端まで右矢印キーで移動したらフォーカスはそれ以上移動しない」とありますが、
 
 > Right Arrow: Moves focus one cell to the right. If focus is on the right-most cell in the row, focus does not move.
-> 
+>
 > https://www.w3.org/WAI/ARIA/apg/patterns/grid/#datagridsforpresentingtabularinformation
 
 この点はReact Ariaの`Table`コンポーネントでは異なり、右端まで移動した後に右矢印キーを押すと同一行の左端へフォーカスが移動するように[公式ドキュメントのサンプル](https://react-spectrum.adobe.com/react-aria/Table.html#example)では動きます。
