@@ -3,7 +3,7 @@ title: "React AriaのTableの挙動をData Gridパターンから理解する"
 emoji: "🎄"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["react", "reactaria", "a11y"]
-published: false
+published: true
 ---
 
 この記事は、カオナビ Advent Calendar 2025（シリーズ1）11日目です。
@@ -16,8 +16,8 @@ https://qiita.com/advent-calendar/2025/kaonavi
 
 https://react-spectrum.adobe.com/react-aria/Table.html
 
-`Table`コンポーネントによって高機能な表形式のUIを実現できますが、HTMLが持つ[`<table>`要素](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/table) や一般的なウェブアプリケーションの表形式UI[^1]とは異なる振る舞いがあり、基準となるメンタルモデルを持てないとその挙動に戸惑うことがあります。一見似た構造ですが、`<table>` の延長線上にあるUIではありません。
-特に、tab や矢印キーによるフォーカス移動など、一般的な `<table>` の操作感とは異なるキーボード挙動が戸惑いの原因になりやすいポイントだと思います。
+`Table`コンポーネントによって高機能な表形式のUIを実現できますが、HTMLが持つ[`<table>`要素](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/table) や一般的なウェブアプリケーションの表形式UI[^1]とは異なる振る舞いがあり、基準となるメンタルモデルを持てないとその挙動に戸惑うことがあります。一見`<table>` に似た構造ですが、その延長線上で理解しようとすると、違和感が生じやすいかと思います。
+特に、`tab` や矢印キーによるフォーカス移動など、一般的な `<table>` の操作感とは異なるキーボード挙動が戸惑いの原因になりやすいポイントではないでしょうか。
 この記事では、React Ariaの`Table`コンポーネントがどのように振る舞うのか、ベースとなっている考え方を学び、その理解の取っ掛かりとなることに焦点をあてます。
 
 :::message
@@ -28,7 +28,7 @@ https://react-spectrum.adobe.com/react-aria/Table.html
 
 ## ベースにあるData Gridパターン
 
-React Ariaの`Table`コンポーネントは、ベースにARIA gridパターンを採用していることが公式ドキュメントへ記載されている以下の1文に示されています。
+React Ariaの`Table`コンポーネントは、ベースにARIA gridパターンを採用していることが公式ドキュメントに記載されている以下の1文に示されています。
 
 > **Accessible** – Follows the [ARIA grid pattern](https://www.w3.org/WAI/ARIA/apg/patterns/grid/), with additional selection announcements via an ARIA live region. Extensively tested across many devices and assistive technologies to ensure announcements and behaviors are consistent.
 >
@@ -43,7 +43,7 @@ React Ariaの`Table`コンポーネントは、このARIA gridパターンをベ
 
 ![React Aria TableとARIAパターンとの関係図](https://storage.googleapis.com/zenn-user-upload/9250889a65c6-20251129.png)
 
-ひとことに「表」といっても、WAI-ARIAの`role`[^3]としては、`table`と`grid`という2つの概念があります。
+ひとことに「表」といっても、[WAI-ARIA](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Accessibility/WAI-ARIA_basics)の`role`[^3]としては、`table`と`grid`という2つの概念があります。
 
 | role    | 概要                                                  |
 | ------- | --------------------------------------------------- |
@@ -95,7 +95,7 @@ React Ariaの`Table`は、データ表示に対するコンポーネントなの
 
 ![セル間移動は矢印キーで可能](https://storage.googleapis.com/zenn-user-upload/201862681889-20251203.png =320x)
 
-tab キーは “グリッドというウィジェット全体の出入り” に使い、 セル間の移動は矢印キーに統一する、というのが Grid パターンの基本的な思想だと理解すると良いかもしれません。
+`tab` キーは “グリッドという一塊のウィジェット全体の出入り” に使い、 セル間の移動は矢印キーに統一する、というのが Grid パターンの基本的な思想だと理解すると良いかもしれません。
 
 一方、セル間移動の挙動は以下のように「右端まで右矢印キーで移動したらフォーカスはそれ以上移動しない」とありますが、
 
@@ -112,10 +112,10 @@ tab キーは “グリッドというウィジェット全体の出入り” �
 
 ここまで見てきたように、名前こそ “Table” ですが、実態としては ARIA Grid パターンに基づく“インタラクティブな表形式のUI” の性質を持っています。
 そのため、HTML table や一般的なTableライブラリーと比べると、挙動に戸惑いを感じる場合があると思います。
+コンポーネント名自体を“Data Grid” としていれば、Data Gridパターンに基づくものであることが直感的に理解できたかもしれませんが、"Table"という名前が広く使われていることもあり、命名上のジレンマがあったのかもしれないと憶測で考えています。
 
-React Aria の `Table` を理解するうえで重要なのは、これが “HTML table のアクセシブル版” ではなく、“Data Grid の考え方を土台にしたインタラクティブな表形式 UI” であるという点です。
-
-この視点を持つことで、セルのフォーカスや tab と矢印キーの扱いの違いといったポイントが腑に落ちやすくなると思います。
+コンポーネント名についてはさておき、React Aria の `Table` を理解するうえで重要なのは、これが “HTML table のアクセシブル版” ではなく、“Data Grid の考え方を土台にしたインタラクティブな表形式 UI” であるという点だと考えられます。
+この視点を持つことで、セルのフォーカスや `tab` と矢印キーの扱いの違いといったポイントが腑に落ちやすくなると思います。
 また、Data Gridパターンを理解することで、React Ariaの`Table`コンポーネントの挙動を予測しやすくなると考えられます。
 
 ## 参考
