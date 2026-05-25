@@ -23,8 +23,5 @@
   },
   "volta": {
     "node": "24.16.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": ["dprint"]
   }
 }
