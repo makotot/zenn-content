@@ -20,8 +20,5 @@
     "textlint": "15.7.1",
     "textlint-rule-preset-japanese": "10.0.4",
     "zenn-cli": "0.4.8"
-  },
-  "volta": {
-    "node": "24.16.0"
   }
 }
