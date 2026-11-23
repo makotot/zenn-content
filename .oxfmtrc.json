@@ -1,0 +1,5 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "embeddedLanguageFormatting": "off",
+  "ignorePatterns": ["pnpm-lock.yaml"]
+}

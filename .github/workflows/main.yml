@@ -10,7 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: dprint/check@v2.6
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 12.21.0
+      - name: Install dependencies
+        run: pnpm install
+      - name: Format check
+        run: pnpm run format:check
 
   test:
     runs-on: ubuntu-latest
