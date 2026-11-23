@@ -4,7 +4,7 @@
 
 - `articles/`: Single-file articles in Markdown (Zenn ID filenames like `xxxxxxxxxxxx.md`). Use the CLI to create new entries; do not rename existing files.
 - `books/<book-id>/`: Book content with chapter files such as `0.introduction.md`, `1.<topic>.md`, and a `config.yaml` for metadata.
-- Tooling/config: `.textlintrc.json` (Textlint rules), `dprint.json` (formatter), `package.json` (scripts), `.github/` (CI, if present).
+- Tooling/config: `.textlintrc.json` (Textlint rules), `.oxfmtrc.json` (oxfmt formatter), `package.json` (scripts), `.github/` (CI, if present).
 
 ## Build, Test, and Development Commands
 
@@ -13,7 +13,7 @@
 - `pnpm run new:article`: Scaffold a new article with correct frontmatter.
 - `pnpm run new:book`: Scaffold a new book directory and files.
 - `pnpm run textlint` or `pnpm run lint`: Lint Markdown in `articles/*.md` using Japanese preset rules.
-- `pnpm run format`: Format Markdown/JSON/TOML with dprint.
+- `pnpm run format`: Format Markdown/JSON/YAML/TOML with oxfmt (`pnpm run format:check` to verify only).
 
 ## Coding Style & Naming Conventions
 

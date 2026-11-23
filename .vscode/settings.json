@@ -1,6 +1,5 @@
 {
-  "dprint.path": "./node_modules/dprint/dprint",
-  "editor.defaultFormatter": "dprint.dprint",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#2a2a2a",

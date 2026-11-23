@@ -1,6 +1,3 @@
 {
-  "recommendations": [
-    "asvetliakov.vscode-neovim",
-    "dprint.dprint"
-  ]
+  "recommendations": ["asvetliakov.vscode-neovim", "oxc.oxc-vscode"]
 }
