@@ -13,7 +13,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
-          version: 12.21.0
+          version: 12.22.0
       - name: Install dependencies
         run: pnpm install
       - name: Format check
@@ -26,7 +26,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
-          version: 12.21.0
+          version: 12.22.0
       - name: Install dependencies
         run: pnpm install
       - name: Lint
