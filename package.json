@@ -19,7 +19,7 @@
   "devDependencies": {
     "oxfmt": "0.79.0",
     "textlint": "16.1.2",
-    "textlint-rule-preset-japanese": "10.0.4",
+    "textlint-rule-preset-japanese": "10.1.0",
     "zenn-cli": "0.5.15"
   }
 }
