@@ -20,6 +20,6 @@
     "oxfmt": "0.80.0",
     "textlint": "16.1.3",
     "textlint-rule-preset-japanese": "10.1.0",
-    "zenn-cli": "0.5.15"
+    "zenn-cli": "0.5.16"
   }
 }
